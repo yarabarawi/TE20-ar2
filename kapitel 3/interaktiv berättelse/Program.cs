@@ -12,19 +12,30 @@ namespace interaktiv_berättelse
 
             if (kista == "ett")
             {
-                Console.WriteLine("Du valde kista ett, du fick ett blått piller");
+                Console.WriteLine("Du valde kista ett, du fick ett blått piller vill du äta den? Ja/nej?");
+                kista = Console.ReadLine();
+                if (kista == "ja")
+                {
+                    Console.WriteLine("du dog! Game over!");
+                }
+                else
+                {
+                    Console.WriteLine("du valde att inte äta, du vann!");
+                }
             }
 
             if (kista == "två")
             {
-                Console.WriteLine("Du valde kista två du fick ett rött piller");
-            }
-
-            Console.WriteLine("Du ser en knapp på väggen, trycker du på den eller inte");
-
-            if (knapp == "tryck")
-            {
-                System.Console.WriteLine("Nu hör du en röst viska, ät pillret eller gå upp för trappan");
+                Console.WriteLine("Du valde kista två, du fick ett rött piller vill du äta den? ja/nej? ");
+                kista = Console.ReadLine();
+                if (kista == "ja")
+                {
+                    Console.WriteLine("En man kommer in i rummet och säger att du vann!");
+                }
+                else
+                {
+                    Console.WriteLine("En man kommer in i rummet och säger att du vann! Men du kan inte längre andas och dör");
+                }
             }
 
         }
