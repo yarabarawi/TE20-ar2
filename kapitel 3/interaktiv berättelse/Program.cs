@@ -6,9 +6,23 @@ namespace interaktiv_berättelse
     {
         static void Main(string[] args)
         {
+
+              Console.WriteLine("Du är i ett rum och ser 2 dörrar, väljer du (Höger/Vänster)");
+           string dörr = Console.ReadLine();
+            
+            if (dörr == "Höger")
+            {
+              Console.WriteLine("Du kommer in i ett annat rum och ser nått men vet inte vad det är för att det är mörkt.");
+            }
+            else
+            {
+              Console.WriteLine("Du kommer in i ett annat rum och ser nått men vet inte vad det är för att det är mörkt.");
+
+            }
+
+
             Console.WriteLine("Det finns två kistor tar du kista ett eller kista två");
             string kista = Console.ReadLine();
-
 
             if (kista == "ett")
             {
